@@ -1,0 +1,30 @@
+.row {
+    padding: 20px;
+    margin-right: 1px;
+    background:#d3d3d39f;
+}
+
+div todo {
+    background-color: #d3d3d3b4;
+    text-align: center;
+}
+
+
+
+
+/* etiquta nombre*/
+#nombre {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 5% ;
+    margin-left: 10px;
+}
+
+h1 ,p { 
+    text-align: center;
+}
+
+h4 {
+    margin-left: 10px;
+    text-align: center;
+}

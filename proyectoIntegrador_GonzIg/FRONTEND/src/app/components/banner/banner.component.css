@@ -1,0 +1,19 @@
+img{
+    max-width: 100%;
+    height: auto;
+    
+    
+}
+
+
+#fotoDePerfil {
+    display: block;
+    text-align: center;
+    position: absolute;
+    width:20%;
+    border-radius: 100%;
+    box-shadow: 3px 3px 3px grey;
+    left: 40%;
+    top: 500px;
+    }    
+

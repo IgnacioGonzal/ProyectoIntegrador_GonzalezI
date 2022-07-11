@@ -1,0 +1,12 @@
+.row{
+    padding: 20px;
+    margin-right: 1px;
+    background:#d3d3d39f;
+}
+
+div todo{
+    background-color:#c70b0bc9; }
+
+h1 , h3 {
+    display: inline;
+}
