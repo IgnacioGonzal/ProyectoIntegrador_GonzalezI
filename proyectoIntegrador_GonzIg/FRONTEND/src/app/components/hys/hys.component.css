@@ -1,3 +1,8 @@
 .row {
-    background:#d3d3d39f;
+    background-color:#c4b789cc;
+    margin-left:5px;
+}
+
+h1 {
+    font-family: 'Bebas Neue', cursive;
 }

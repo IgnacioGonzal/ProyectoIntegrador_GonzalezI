@@ -14,7 +14,9 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/compiler';
 import { HysComponent } from './components/hys/hys.component';
 import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { FooterComponent } from './components/footer/footer.component';
-
+import { HttpClientModule } from '@angular/common/http';
+import { HomeComponent } from './components/home/home.component';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { FooterComponent } from './components/footer/footer.component';
     EducacionComponent,
     HysComponent,
     ProyectosComponent,
-    FooterComponent
+    FooterComponent,
+    HomeComponent,
+    LoginComponent
 
   ],
   imports: [
@@ -39,7 +43,8 @@ import { FooterComponent } from './components/footer/footer.component';
       outerStrokeColor: "#78C000",
       innerStrokeColor: "#C7E596",
       animationDuration: 300,
-      })
+      }),
+      HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent],
