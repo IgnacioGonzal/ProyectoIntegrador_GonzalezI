@@ -18,6 +18,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 
+import { FormsModule }   from '@angular/forms';
+import { interceptorProvider } from './service/interceptor-service';
+import { NewExperienciaComponent } from './components/experiencia/new-experiencia.component';
+import { EditExperienciaComponent } from './components/experiencia/edit-experiencia.component';
+import { NeweducacionComponent } from './components/educacion/neweducacion.component';
+import { EditeducacionComponent } from './components/educacion/editeducacion.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,12 +39,17 @@ import { LoginComponent } from './components/login/login.component';
     ProyectosComponent,
     FooterComponent,
     HomeComponent,
-    LoginComponent
+    LoginComponent,
+    NewExperienciaComponent,
+    EditExperienciaComponent,
+    NeweducacionComponent,
+    EditeducacionComponent
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
     NgCircleProgressModule.forRoot({radius: 100,
       outerStrokeWidth: 16,
       innerStrokeWidth: 8,
@@ -46,7 +59,9 @@ import { LoginComponent } from './components/login/login.component';
       }),
       HttpClientModule
   ],
-  providers: [],
+  providers: [
+    interceptorProvider
+  ],
   bootstrap: [AppComponent],
   schemas: [NO_ERRORS_SCHEMA] || [CUSTOM_ELEMENTS_SCHEMA]
 })

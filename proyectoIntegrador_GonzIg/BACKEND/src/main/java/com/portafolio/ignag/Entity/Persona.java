@@ -10,9 +10,22 @@ import javax.validation.constraints.Size;
 import lombok.Getter;
 import lombok.Setter;
 
+
+
 @Getter @Setter
 @Entity
 public class Persona {
+
+    public Persona(Long id, @NotNull @Size(min = 1, max = 50, message = "no cumple con la longitud") String nombre,
+            @NotNull @Size(min = 1, max = 50, message = "no cumple con la longitud") String apellido,
+            @Size(min = 1, max = 50, message = "no cumple con la longitud") String img) {
+        this.id = id;
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.img = img;
+    }
+public Persona(){}
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
