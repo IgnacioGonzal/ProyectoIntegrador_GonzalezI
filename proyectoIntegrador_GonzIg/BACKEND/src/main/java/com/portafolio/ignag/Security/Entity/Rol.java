@@ -22,6 +22,8 @@ public class Rol {
 
 //CONTRUCTOR
 
+public Rol() {
+}
 
 public Rol(RolNombre rolNombre) {
     this.rolNombre = rolNombre;
